@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Put the entire form in a container -->
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve the
+                platform</p>
+        </header>
+        <!-- Form tag element -->
+        <form action='#' id="survey-form">
+            <!-- From Group Name-->
+            <div class="form-group">
+                <label id="name-label">Name:</label> <input class="form-control" type="text" id="name" name="name"
+                    placeholder="Enter Your First Name" required />
+            </div>
+            <!-- From Group Email-->
+            <div class="form-group">
+                <label id="email-label">Email:</label> <input class="form-control" type="email" id="email" name="email"
+                    placeholder="Enter Your Email" required />
+            </div>
+            <!-- From Group Number-->
+            <div class="form-group">
+                <label id="number-label">Age (Optional):</label> <input class="form-control" type="number" id="number"
+                    name="age" placeholder="Age" min="10" max="150" />
+            </div>
+
+            <!-- From Group Dropdown-->
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value="">(select curent role)</option>
+                    <option value="1">Student</option>
+                    <option value="2">Fulltime Job</option>
+                    <option value="3">Fulltime Leaner</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
+            </div>
+
+
+            <!-- From Group Radio-->
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label><input type="radio" name="recommend" class="input-radio" value="Definitely" checked />
+                    Definitely</label>
+                <label><input type="radio" name="recommend" class="input-radio" value="Maybe" /> Maybe</label>
+                <label><input type="radio" name="recommend" class="input-radio" value="Not sure" /> Not sure</label>
+            </div>
+
+            <!-- From Group Dropdown 2-->
+            <div class="form-group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select id="most-like" name="favPart" class="form-control" required>
+                    <option disabled selected value="">(select favorite part)</option>
+                    <option value="1">Challanges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                </select>
+            </div>
+
+
+            <!-- From Group Dropdown 2-->
+            <div class="form-group">
+                <p>What would you like to see improved? <span class="clue">(check all that apply)</span></p>
+
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="front-End" /> Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="back-End" /> Back-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="dataVisual" /> Data
+                    Visualization
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="challanges" /> Challenges
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="community" /> Open Source
+                    Community
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="helprooms" /> Gitter help rooms
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="videos" /> Videos
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="meetups" /> City Meetups
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="wiki" /> Wiki
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="forum" /> Forum
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" class="input-checkbox" value="additional" /> Additional
+                    Courses
+                </label>
+            </div>
+            <!-- From Group Textarea -->
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comments" rows="3" cols="30" class="input-textarea"
+                    placeholder="Enter your comment here..."></textarea>
+                </label>
+            </div>
+            <!-- From Group Button -->
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
