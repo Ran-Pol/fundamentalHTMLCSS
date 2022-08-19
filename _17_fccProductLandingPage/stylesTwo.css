@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+.pageWrapper{
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+
+.logo{
+    width: 60vw;
+    /* background-color: red; */
+}
+
+#header-img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+#nav-bar{
+    /* background-color: aqua; */
+    font-weight: 400;
+
+}
+
+#nav-bar ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-link{
+    color: black;
+    text-decoration: none;
+}
+
+/* End of Header Styles */
+
+/* Email Catcher Section */
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+
+.formContainer h2{
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.formContainer input[type="email"]{
+    /* background-color: aqua; */
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+/* General Buttons Styles */
+.formContainer input[type="submit"]{
+    background-color: #f1c40f;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+
+}
+/* Specific Button Styles  */
+.btn{
+    padding: 0 20px;
+    font-size: 1em;
+    height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    
+}
+/* Email Catcher End */
+
+
+/* Main Section */
+
+
+/* Feature Section */
+.mainContainer{
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#features{
+    margin-top: 30px;
+    background-color: aquamarine;
+}
+
+.featureGroup{
+    display: flex;
+}
+
+#features .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: orangered;
+}
+
+
+#features .desc{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    background-color: bisque;
+}
+/* Feature Section End*/
+
+/* How it Works Section: Video */
+
+#how-it-works{
+    background-color: bisque;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works > iframe{
+width: 100%;
+max-width: 560px ;
+}
+
+/* Pricing Section */
+
+#pricing{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pricePlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.pricePlan > .planTitle{
+background-color: #ddd;
+color: black;
+padding: 15px 0;
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.pricePlan > .pPrice{
+margin-top: 15px;
+font-weight: bold;
+font-size: 1.5em;
+}
+
+.pricePlan > ol{
+    margin: 15px 0;
+}
+.pricePlan > ol > li{
+   padding: 5px 0;
+}
+.pricePlan > button{
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer>ul{
+    display: flex;
+    justify-content: flex-end;
+}
+footer>ul > li{
+    padding: 0 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+footer>span{
+margin-top: 5px;
+display: flex;
+justify-content: flex-end;
+font-size: .9em;
+color: #444;
+
+}
