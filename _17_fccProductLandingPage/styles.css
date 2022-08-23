@@ -1,0 +1,137 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    background-color: black;
+
+}
+
+.pageWrapper {
+    background-color: gainsboro;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+
+#header-img {
+    width: 300px;
+}
+
+#nav-bar ul {
+    width: 500px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formContainer {
+    grid-column: 4/8;
+    grid-row: 1;
+    margin-top: 80px;
+    background-color: red;
+}
+
+.cssGridContainer {
+    grid-column: 2/12;
+    grid-row: 3/12;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#how-it-works {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#pricing {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#features,
+#how-it-works,
+#pricing {
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+
+footer {
+    grid-column: 2/12;
+    grid-row: 12;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.tabsFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tabsFooter p {
+    margin-right: 20px;
+}
+
+
+
+/* @media (max-width: 500px) {
+
+    body {
+        padding: 0;
+
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        background-color: orangered;
+    }
+
+
+    #header-img {
+        width: 250px;
+    }
+
+    #nav-bar ul {
+        background-color: yellowgreen;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 250px;
+        justify-content: space-around;
+        align-items: center;
+
+    } */
